@@ -1,44 +1,57 @@
-# surfs_up
-Overview of the challenge
+# Surfs_up
+## Overview of the challenge
 In this module we are woowing an investor W.Avy to secure his capital in a Surf-n-Shake shop that we are proposing to be located in Oahu, Hawaii. In order to convice W.Avy that the chosen location is ideal for the Surf-n-Shake shop we have to provide him with detailed analysis of the weather pattern of this location. Our initial analysis had a positive feed back for the investor who now wants to invest in additional locations for similar shops.  For this we have used sqlite, sqlalchemy and flask to generate the necessary analysis. 
 
-Voter turnout in each county.
-Percentage of votes from each county out of the total count.
-The county with the highest turnout. The output of this analysis will be included in a text file that should be easy to read for audience of any background.
-Election-Audit Results:
-Total number of votes casted in the congressional election
-This election saw a good voter turnout and a total of 369,711 votes were casted across three counties.
-Summary of number of votes and the percentage of total votes for each county in the precinct
-The result of the number of votes cast and percentage of total votes are as follows:
-Denver county: 82.8% (306,055)
-Jefferson county: 10.5% (38,855)
-Arapahoe county: 6.7% (24,801)
-County with largest number of votes
-Denver county had the largest voter turnout
-Summary of number of votes and the percentage of total votes for each candidates overall
-The following is the tabulated result for total votes and percentage of the total for the three candidates:
-Diana DeGette: 73.8% (272,892)
-Charles Casper Stockham: 23.0% (85,213)
-Raymon Anthony Doane: 3.1% (11,606)
-Election outcome
-The winner for this election was:
-Diana DeGette who received 272,892 votes which was 73.8% of the total votes casted.
-Various features of the code
-How to get candidate vote count
-Code Candidate vote count
+## Summary:
+### How do the total number of rides compare between the city types 
+  * From the summary DataFrame and for the given period these are the comparison for the total rides:
+	1. Urban: 1,625 (68.4%)
+	2. Suburban: 625 (26.3%)
+	3. Rural: 125 (5.3%)
+   
+   As seen from the above statistics the urban cities account for the most number of rides while, the rural cities account for least number
 
-How to get county vote count
-Code_countyvote count
+### How do the total number of driver compare between the city types   
+  * Here is the comparison for the total number of drivers for the city types:
+	1. Urban: 2,405 (~80.9%)
+	2. Suburban: 490 (~16.5%)
+	3. Rural: 78 (~2.6%)
+   
+   As seen from the above statistics the urban cities account for more than 80% of the drivers while, the rural cities account for >3%.
 
-How to get candidate votes percentage
-Code_Candidate votes and their percentage
+### How do the total fare collected compare between the city types   
+  * Here is the comparison for the total fare for the city types:
+	1. Urban: $39,854.38 (~62.7%)
+	2. Suburban: $19,356.33 (~30.5%)
+	3. Rural: $4,327.93 (~6.8%)
+    
+    As seen from the above statistics the urban cities account for close to 63% of the fares while, the rural cities account for ~7%.
+ 
+### How do the average fare per ride compare between the city types   
+  * Here is the comparison for the average fare per ride for the city types:
+	1. Urban: $23.53 
+	2. Suburban: $30.97
+	3. Rural: $34.62
+    
+    These statistic show that the average fare per ride is higher in rural cities (~47% higher compared to urban cities) and is lowest in urban cities amongst the three.
 
-How to get county vote percentage
-Code_percentage of county votes
+### How do the average fare per driver compare between the city types   
+  * Here is the comparison for the average fare per driver for the city types:
+	1. Urban: $16.57 
+	2. Suburban: $39.50
+	3. Rural: $55.49
+    
+    The average fare per driver is a wopping 234% higher in rural cities, and 138% higher in suburban cities when compared to urban cities.
 
-How to get total votes casted
-Code_total vote count
+The multiple-line chart validates the analysis and show that the highest revenue generation from urban cities followed by suburban and the rural. There is not clear trend between the months and the total fare collected to conclude where the a specific month is more favorable for PyBer. 
 
-Election Audit Summary
-The script could be modifed for a national level elections, for example in this audit we declared a dictionary with key=county and value=votes. In a similar fashion we could use a dictionary of list with key=states and values=[list of counties]
-We could also use modify the script to iterate over results from past years or they type of ballots cast (mail in, hand counted or computer counted) which could provide more statistical information and reveal any underlying trends or preferences
+![PyBer_challenge_fig](https://user-images.githubusercontent.com/107159218/179092373-a727fdf4-926a-4d3e-af42-16d74cf533af.png)
+
+## Summary and Recommendations:
+
+Based on the above analysis, it is clear that there is a big disparity between the data from rural and urban cities. The total revenue generate from urban cities is significantly higher that from rural. However the fare per ride or the fare per driver is much higher in rural cities compared to urban. 
+
+* Here are our recommendations:
+	1. Reduce the fare per ride for the rural cities. This would encourage more people to use the ridesharing app. Or atleast have a certain period every year where discounted rates apply.
+	2. Keep the percentage of the commissions for the drivers the same as current for the rural cities if the fare rates are dropped. This might increase the number of drivers in the rural cities and thereby an increase in the number of rides.
+	3. Research into the rides by distance for all cities. This might throw some insights on the most prefered distance by city type. An to adjustment of the fare for these distance may yield an increase number of riders and hence increased revenue.   
