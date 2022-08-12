@@ -7,13 +7,18 @@ In this module we are woowing an investor W.Avy to secure his capital in a Surf-
 	1. The average temperature in June (~75 degF) is higher than that in December (~71 degF) 
 	2. The standard deviation for December (~3.75) is higher than June (~3.26)
 	3. The variation in temperature collected from different stations in December (max=83 and min=56) is higher than that recorded in June (max=85 and min=64). This may indicate greater variabilty in temperature in December since the number of data points collected for June (1700) is quite higher than December (1517).
-   
+
+![June analysis](https://user-images.githubusercontent.com/107159218/184269997-02d10380-903f-4510-8c7a-68d9e0c1e94b.PNG)
+
+![December analysis](https://user-images.githubusercontent.com/107159218/184270012-3620e524-bcbb-4c6f-bd0a-3bad9c7d352c.PNG)
+
+
   
 
-## How do the total number of driver compare between the city types   
-  * Here is the comparison for the total number of drivers for the city types:
-	1. Urban: 2,405 (~80.9%)
-	2. Suburban: 490 (~16.5%)
-	3. Rural: 78 (~2.6%)
+## Summary 
+  * As described in the result section, the month of June is hotter than December. However the temperature recorded from different stations show higher temperature variability in December than June. Despite the variation both the months are equally favorable for Surf-and-Shake shop. These are the additional queries that I would make in addition to those already covered; 
+	1. Add more data points in December to temperature collect and match it more closely to June to make a more meaningful analysis 
+	2. Add a query for precipitation as no one would like to surf when it's raining and this would reduce the number of customers to the shop
+	
    
    
